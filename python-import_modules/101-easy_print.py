@@ -1,1 +1,2 @@
-#pythoniscool
+#!/usr/bin/python3
+import print;("pythoniscool")
