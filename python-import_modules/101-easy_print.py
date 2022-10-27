@@ -1,1 +1,1 @@
-#printpythoniscool
+#!/usr/bin/python3
