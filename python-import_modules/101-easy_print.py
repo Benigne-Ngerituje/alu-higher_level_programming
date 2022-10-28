@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import print;("pythoniscool")
+import easy_print_101
