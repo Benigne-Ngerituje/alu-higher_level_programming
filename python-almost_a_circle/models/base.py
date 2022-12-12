@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3 #beeded as instructed"
 # models/base.py
 
 
@@ -24,7 +24,7 @@ class Base: #the class base
             number of objects created.
     """
 
-    __nb_objects = 0
+    __nb_objects = 0 #variable for _nb objects as instructed
 
     def __init__(self, id=None): #function with id as parameter
         """Initializes the object with a unique id value.
