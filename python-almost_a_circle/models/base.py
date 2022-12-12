@@ -2,12 +2,12 @@
 
 """A base class"""
 
+
 class Base:
 
     """A base class for the file"""
 
     __nb_objects = 0
-
 
     def __init__(self, id=None):
 
