@@ -100,7 +100,7 @@ class Rectangle(Base):
             [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for w in range(self.width)]
             print("")
-            
+       
     def __str__(self):
         """
             Return the print() and str() representation of the Rectangle.
