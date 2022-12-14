@@ -1,24 +1,6 @@
 #!/usr/bin/python3
 class Rectangle(Base):
-    """A class for representing rectangles.
-
-    Private instance attributes:
-        __width: The width of the rectangle.
-        __height: The height of the rectangle.
-        __x: The x-coordinate of the rectangle's top-left corner.
-        __y: The y-coordinate of the rectangle's top-left corner.
-
-    Public instance methods:
-        width(): Returns the width of the rectangle.
-        width(value): Sets the width of the rectangle to value.
-        height(): Returns the height of the rectangle.
-        height(value): Sets the height of the rectangle to value.
-        x(): Returns the x-coordinate of the rectangle's top-left corner.
-        x(value): Sets the x-coordinate of the rectangle's top-left corner to value.
-        y(): Returns the y-coordinate of the rectangle's top-left corner.
-        y(value): Sets the y-coordinate of the rectangle's top-left corner to value.
-
-    """
+    """A class for representing rectangles."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
