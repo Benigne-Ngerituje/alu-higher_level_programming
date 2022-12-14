@@ -71,6 +71,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        
         """Set the value of y"""
 
         if type(value) != int:
