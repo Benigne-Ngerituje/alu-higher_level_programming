@@ -19,6 +19,7 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
+    @width.setter
     def width(self, value=None):
 
         """ assigning a value to width """
@@ -28,6 +29,7 @@ class Rectangle(Base):
         else:
             self.__width = value
 
+    @height.setter
     def height(self, value=None):
 
         """ assigning a value to height """
