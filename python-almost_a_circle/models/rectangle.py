@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""Rectangle Instance classes"""
+
+from models.base import Base
+
 
 class Rectangle(Base):
     """Rectangle class"""
