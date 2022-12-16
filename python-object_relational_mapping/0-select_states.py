@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+# script that lists all 'states' from the database 'hbtn_0e_0_usa'
 """
-return all table values (table 'states')
-parameters given to script: username, password, database
+   import 'sys' & 'MySQLdb'
 """
-
+import sys
 import MySQLdb
 from sys import argv
 
