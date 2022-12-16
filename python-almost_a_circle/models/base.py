@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import json
-
 """A base class"""
 
 
@@ -58,7 +56,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """Creating objects."""
+        """CReatiNG oBJectS."""
         if cls.__name__ == "Rectangle":
             yves = cls(3, 2)
         if cls.__name__ == "Square":
@@ -80,3 +78,4 @@ class Base:
         for hello in hi:
             fine.append(cls.create(**hello))
         return fine
+        
