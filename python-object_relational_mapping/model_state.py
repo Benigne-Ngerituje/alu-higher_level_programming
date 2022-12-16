@@ -1,19 +1,17 @@
 #!/usr/bin/python3
-"""
-Defines class State
-"""
+'''
+    Using the SQL Alchemy in defining a database
+    states Database table
+'''
 
-from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-
+from sqlalchemy import Column, Integer, String
 Base = declarative_base()
 
 
 class State(Base):
-    """
-    Class State; instance of Base
-    Linked to MySQL table "states"
-    """
-    __tablename__ = "states"
-    id = Column(Integer, nullable=False, primary_key=True)
+    '''A class defination of a table in the sql'''
+    __tablename__ = 'states'
+
+    id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
