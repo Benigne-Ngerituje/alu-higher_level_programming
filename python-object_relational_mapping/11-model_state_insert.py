@@ -1,32 +1,24 @@
 #!/usr/bin/python3
-"""
-update state: given id, change state name
-parameters given to script: username, password, database
+"""script that adds the State object
+“Louisiana” to the database hbtn_0e_6_usa
 """
 
-from sys import argv
+import sys
 from model_state import Base, State
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
 
 
 if __name__ == "__main__":
-
-    # make engine for database
-    user = argv[1]
-    passwd = argv[2]
-    db = argv[3]
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.
-                           format(user, passwd, db), pool_pre_ping=True)
-    Base.metadata.create_all(engine)
+    engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
+                           .format(sys.argv[1], sys.argv[2], sys.argv[3]),
+                           pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
+    Base.metadata.create_all(engine)
 
-    # add new state and commit to table
-    new = State(name="Louisiana")
-    session.add(new)
+    state = State(name="Louisiana")
+    session.add(state)
     session.commit()
-
-    print("{:d}".format(new.id))
-
+    print(state.id)
     session.close()
