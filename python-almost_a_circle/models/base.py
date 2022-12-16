@@ -78,4 +78,3 @@ class Base:
         for hello in hi:
             fine.append(cls.create(**hello))
         return fine
-        
