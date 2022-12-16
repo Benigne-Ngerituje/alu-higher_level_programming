@@ -26,4 +26,3 @@ if __name__ == "__main__":
         print("{:d}: {:s}".format(instance.id, instance.name))
 
     session.close()
-    
