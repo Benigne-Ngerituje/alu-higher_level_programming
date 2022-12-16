@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import json
+
 """A base class"""
 
 
@@ -34,13 +36,13 @@ class Base:
     def save_to_file(cls, list_objs):
         """List of objects"""
         file_name = cls.__name__ + ".json"
-        yy = []
+        obj_dicts = []
         if list_objs:
             for i in list_objs:
-                yy.append(cls.to_dictionary(i))
+                obj_dicts.append(cls.to_dictionary(i))
 
         with open(file_name, mode="w") as saveme:
-            saveme.write(cls.to_json_string(yy))
+            saveme.write(cls.to_json_string(obj_dicts))
 
     @staticmethod
     def from_json_string(json_string):
@@ -56,13 +58,13 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """CReatiNG oBJectS."""
+        """Creating objects."""
         if cls.__name__ == "Rectangle":
-            yves = cls(3, 2)
+            dummy = cls(3, 2)
         if cls.__name__ == "Square":
-            yves = cls(3)
-        yves.update(**dictionary)
-        return yves
+            dummy = cls(3)
+        dummy.update(**dictionary)
+        return dummy
 
     @classmethod
     def load_from_file(cls):
