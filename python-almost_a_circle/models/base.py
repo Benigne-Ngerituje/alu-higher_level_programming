@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import json
+
 """A base class"""
 
 
@@ -56,7 +58,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """CReatiNG oBJectS."""
+        """Creating objects."""
         if cls.__name__ == "Rectangle":
             yves = cls(3, 2)
         if cls.__name__ == "Square":
