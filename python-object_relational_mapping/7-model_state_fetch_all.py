@@ -1,4 +1,4 @@
-##!/usr/bin/python3
+#!/usr/bin/python3
 """
 This script retrieves all state objects from a MySQL database and prints their
 ID and name fields to the console.
