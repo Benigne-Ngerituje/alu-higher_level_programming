@@ -12,7 +12,9 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
 
-    # make engine for database
+    """ 
+        make engine for database
+    """
     user = argv[1]
     passwd = argv[2]
     db = argv[3]
