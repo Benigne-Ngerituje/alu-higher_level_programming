@@ -9,4 +9,4 @@ switch (process.argv.length) {
     default:
       console.log('Arguments found');
       break;
-  }
+}
